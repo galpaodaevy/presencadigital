@@ -1,62 +1,28 @@
 # Andrew | Presença Digital
 
-Site institucional de serviços digitais (sites, portfólios, identidade visual, conteúdo e tráfego pago) para profissionais autônomos e pequenos negócios.
+Site estático em HTML, CSS e JavaScript. Publicação pelo GitHub Pages.
 
-HTML, CSS e JavaScript puros — sem build, sem framework, sem backend. Basta abrir `index.html` ou publicar a pasta no GitHub Pages.
+## Páginas
 
-## Estrutura
+- index.html: apresentação, soluções, projetos, valores e processo.
+- servicos.html: quatro serviços e valores.
+- projetos.html: projetos, PDFs, perguntas frequentes e contato.
+- style.css e repaginacao.css: estilos responsivos.
+- app.js: menu, animações e links de orçamento.
 
-```
-.
-├── index.html              # Home (hero cinematográfico, pacotes, como funciona, sobre)
-├── servicos.html           # Serviços organizados em 4 grupos, com preços
-├── projetos.html           # Cases reais + Sobre + FAQ + Contato/orçamento
-├── styles.css              # Design system e estilos de todas as páginas
-├── main.js                 # Header, hero scroll-driven, reveals, FAQ, formulário
-├── andrew-hero.webp/.jpg   # Foto do hero da Home
-├── andressa-*.webp         # Imagens do case Andressa Matos
-├── evy-*.webp              # Imagens do case Evy Braids
-├── galpao-cover.webp       # Imagem do case Galpão da Evy
-├── gustavo-*.webp          # Imagens do case Gustavo Etelvino
-└── README.md
-```
+## Valores
 
-Tudo na raiz, sem subpastas — de propósito: o upload de arquivos pelo site do GitHub (Add file > Upload files) não preserva pastas aninhadas quando os arquivos são arrastados individualmente, então manter tudo num nível só evita o problema de CSS/JS/imagens não subirem.
+- Instagram completo: R$ 200.
+- Portfólio profissional: R$ 120.
+- Portfólio + site + Instagram: R$ 600.
+- Edição de até 10 fotos: R$ 80.
 
-## Design system
+## Imagens e portfólios
 
-| Token | Valor |
-|---|---|
-| Fundo principal | `#0D0D0F` |
-| Fundo secundário | `#17171A` |
-| Texto principal | `#F3F1EC` |
-| Texto secundário | `#B8B8BC` |
-| Destaque (âmbar) | `#D9923B` |
-| Título | Instrument Sans |
-| Corpo | Inter |
+Os arquivos ficam em assets/. As fotografias de Andrew foram escolhidas pelo titular. Os portfólios de Fábio Santos e Érika Bezerra estão em destaque, com links para os PDFs completos.
 
-## Hero da Home
+## Contato
 
-Seção `.hero` com 400vh de altura; o JS calcula o progresso do scroll dentro dela e:
-- troca a "cena" de texto ativa entre os 4 momentos do briefing;
-- aplica um zoom (Ken Burns) sutil na foto.
+prod.eodrew@gmail.com
 
-Não há vídeo ainda — o efeito usa a foto estática. Para trocar por um vídeo real controlado pelo scroll, troque o bloco que aplica `transform: scale()` na imagem por `video.currentTime = progress * video.duration` em `main.js` (função `applyHeroProgress`).
-
-No mobile (`max-width: 860px`) e com `prefers-reduced-motion: reduce`, o hero mostra direto a cena final, sem o efeito de scroll.
-
-## Formulário de orçamento
-
-O site é estático, então o formulário em `projetos.html#contato` não envia para um servidor: ao enviar, ele monta um `mailto:` para `prod.eodrew@gmail.com` já com nome, serviço e mensagem preenchidos. Para receber os pedidos direto (planilha, e-mail automático, CRM), trocar por um serviço como Formspree ou um backend próprio, mantendo os mesmos campos.
-
-Os links de "Solicitar orçamento" nos cards de `servicos.html` já passam o nome do serviço pela URL (`?servico=...`), que é lido pelo JS e preenche o campo automaticamente ao abrir a página de contato.
-
-## Publicação (GitHub Pages)
-
-1. Subir o conteúdo desta pasta na raiz do repositório (ou branch/pasta configurada no GitHub Pages).
-2. Nenhuma etapa de build é necessária — os arquivos já são estáticos.
-
-## Contato do negócio
-
-- Instagram: [@andrewgestortrafego](https://www.instagram.com/andrewgestortrafego/)
-- E-mail: prod.eodrew@gmail.com
+Os botões de orçamento abrem o aplicativo de e-mail com o serviço selecionado. Não há envio automático para servidor.

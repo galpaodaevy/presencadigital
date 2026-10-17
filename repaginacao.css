@@ -1,0 +1,32 @@
+/* Proposta de repaginacao: abertura direta e portfolio em destaque. */
+:root{--bg:#101513;--panel:#1a211d;--ink:#f6f3e9;--muted:#b8c1b9;--gold:#e5b478;--line:#e8f0df26}
+body{background:var(--bg)}header{background:#101513ed;height:86px}
+.button{border-radius:5px;padding:16px 24px}.text-link{border-color:var(--line)}
+.intro-home{padding:156px 0 76px;border-bottom:1px solid var(--line)}
+.intro-grid{display:grid;grid-template-columns:1.12fr 1fr;align-items:center;gap:64px}
+.intro-copy h1{font:500 clamp(44px,4.7vw,76px)/1.06 Manrope,sans-serif;letter-spacing:-3.5px;margin:0 0 28px}
+.intro-copy h1 em{font-style:normal;color:var(--gold)}.intro-copy .lead{font-size:18px;max-width:520px}
+.intro-note{font-size:12px;letter-spacing:1px;margin-top:48px}.intro-note span{color:var(--muted);letter-spacing:0}
+.portrait{margin:0;position:relative;background:var(--panel);border-radius:120px 8px 8px 8px;overflow:hidden}
+.portrait img{display:block;width:100%;height:560px;object-fit:cover;object-position:68% center}
+.portrait figcaption{padding:18px 22px;display:flex;justify-content:space-between;font-size:12px;gap:16px}.portrait figcaption span{color:var(--gold)}
+section.content{padding:88px 0}.band{background:#eae8df;color:#17201a}.band p,.band li,.band small{color:#4e5b50}.band .number{color:#765126}.band .package{border-color:#17201a33;background:#f5f3ec;border-radius:8px}.band .package.featured{border-color:#8d602d}.band .badge{background:#243d2d;color:#fff}.band .price small{color:#4e5b50}
+.solutions{gap:0 28px}.solution{padding-right:0}.solution .number{font-size:14px}
+.featured-projects{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.featured-project>div{height:310px;background:var(--panel);overflow:hidden;border-radius:7px;margin-bottom:20px}
+.featured-project img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .3s}
+.featured-project:hover img{transform:scale(1.035)}.featured-project:first-child img,.featured-project:last-child img{object-fit:contain}
+.featured-project .number{font-size:10px;letter-spacing:1.2px}.featured-project h3{font-size:23px;display:flex;justify-content:space-between}.featured-project h3 span{color:var(--gold)}
+.service-price{white-space:normal}.service-heading{align-items:flex-start}.service-heading h3{margin-top:0;max-width:66%}.service-price{padding:6px 10px;background:var(--panel);border-radius:4px;min-width:110px;text-align:right}
+.service{padding:30px 0}.project-image{border-radius:8px}.project img{height:auto}.project-image img{height:100%}
+.contact-banner{background:var(--panel)}.gallery>img{width:48%}
+@media(max-width:1000px){.intro-grid{gap:32px}.intro-copy h1{letter-spacing:-2px}.portrait img{height:490px}.featured-project>div{height:240px}}
+@media(max-width:700px){header{height:80px}.intro-home{padding:125px 0 55px}.intro-grid{grid-template-columns:1fr;gap:36px}.intro-copy h1{font-size:46px;letter-spacing:-2.3px}.intro-copy .lead{font-size:17px}.intro-note{margin-top:28px}.portrait{border-radius:75px 6px 6px 6px}.portrait img{height:360px}.portrait figcaption{font-size:11px}.featured-projects{grid-template-columns:1fr;gap:30px}.featured-project>div{height:320px}section.content{padding:60px 0}.service-heading h3{max-width:100%}.service-price{display:inline-block;text-align:left}.service-grid{gap:0}.intro-copy .actions{align-items:flex-start;flex-direction:column}.intro-copy .actions .button{width:100%}}
+
+.packages{grid-template-columns:repeat(4,minmax(0,1fr))}.package{padding:26px}.package h3{font-size:22px;min-height:58px}.package .button{font-size:12px;padding:14px 10px;gap:10px}.new-cover{display:block;height:440px!important;padding:18px!important;background:#252d27!important}.new-cover img{object-fit:contain!important;width:100%;height:100%!important}.featured-project img{object-fit:contain!important}.more-projects{background:var(--panel);padding:32px;border-radius:7px;display:flex;flex-direction:column;justify-content:center;margin-bottom:64px}.more-projects h3{line-height:1.4}.more-projects .text-link{align-self:flex-start}@media(max-width:1100px){.packages{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.packages{grid-template-columns:1fr}.package h3{min-height:0}.new-cover{height:380px!important}.more-projects{margin-bottom:0;min-height:240px}}
+
+.portrait img{object-position:50% 30%}.about-mini img[src="assets/andrew-retrato-profissional.png"]{aspect-ratio:4/5;object-position:50% 30%}@media(max-width:700px){.portrait img{height:auto;aspect-ratio:4/5;object-position:center}}
+
+.about-mini img[src="assets/andrew-notebook.png"]{aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:8px}
+
+.about-mini img[src="assets/andrew-notebook.png"]{height:auto}

@@ -13,3 +13,6 @@ function media(){if(video){if(HERO_VIDEO_URL&&!mobile.matches&&!reduce.matches){
 video?.addEventListener('loadeddata',()=>{video.classList.add('ready');schedule()});video?.addEventListener('seeked',schedule);video?.addEventListener('error',()=>video.classList.remove('ready'));
 chapters.forEach((el,i)=>el.addEventListener('click',()=>{const top=hero.getBoundingClientRect().top+scrollY;window.scrollTo({top:top+(hero.offsetHeight-innerHeight)*(i===3?.94:i/4+.03),behavior:reduce.matches?'instant':'smooth'})}));
 addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);mobile.addEventListener('change',media);reduce.addEventListener('change',media);media();
+
+
+const serviceNames=['Instagram completo','Portfólio profissional','Portfólio + site + Instagram','Edição de até 10 fotos'];const selectedService=new URLSearchParams(location.search).get('servico');const contactButton=document.querySelector('.contact-links .button');if(contactButton&&selectedService!==null&&serviceNames[Number(selectedService)]){contactButton.href='mailto:prod.eodrew@gmail.com?subject='+encodeURIComponent('Orçamento: '+serviceNames[Number(selectedService)]);}
