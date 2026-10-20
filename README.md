@@ -25,4 +25,13 @@ Os arquivos ficam em assets/. As fotografias de Andrew foram escolhidas pelo tit
 
 prod.eodrew@gmail.com
 
-Os botões de orçamento abrem o aplicativo de e-mail com o serviço selecionado. Não há envio automático para servidor.
+Os botões de orçamento levam ao formulário de contato. Nome, serviço, @ do Instagram e intenção são obrigatórios. A mensagem informa que o contato veio do site e abre o WhatsApp +55 (11) 95437-7399. A pessoa revisa e envia no aplicativo; os dados do formulário não são armazenados no site. Os links com ?servico=0 até 3 mantêm a seleção dos quatro serviços e valores existentes.
+
+## Atualização visual de outubro de 2026
+
+- Preto, grafite e verde-lima.
+- Quatro retratos executivos criados com IA a partir da foto fornecida pelo titular.
+- Seis sites selecionados, filtrados por necessidade.
+- PDFs e outros trabalhos mantidos em uma seção expansível na página de projetos.
+- Agenda da Evy Braids identificada como demonstração, com confirmação pela profissional.
+- Imagens otimizadas em WebP em assets/executivo-*.webp.
